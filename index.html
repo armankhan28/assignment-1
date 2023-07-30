@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discount Calculator</title>
+  </head>
+  <body>
+    <h1>Online Store Discount Calculator</h1>
+    <label for="purchaseAmount">Enter Purchase Amount:</label>
+    <input type="number" id="purchaseAmount" step="0.01" min="0" required />
+    <button onclick="calculateDiscount()">Calculate Discount</button>
+    <div id="result"></div>
+
+    <h1>Even Number Filter</h1>
+    <div>
+      <label for="inputNumbers">Enter numbers (comma-separated):</label>
+      <input type="text" id="inputNumbers" />
+      <button onclick="filterEvenNumbers()">Filter Even Numbers</button>
+    </div>
+    <div id="result">
+      <h2>Filtered Even Numbers:</h2>
+      <p id="evenNumbers"></p>
+    </div>
+
+    <h1>Multiplication Table Generator</h1>
+    <form id="multiplicationForm">
+      <input
+        class="form-control"
+        type="number"
+        id="multiplicationInput"
+        placeholder="Enter a number"
+      />
+      <button type="submit">Generate Table</button>
+    </form>
+    <div id="multiplicationResult"></div>
+
+    <h1>Grade Calculator</h1>
+    <p>Enter the student's score:</p>
+    <input type="number" id="scoreInput" />
+    <button onclick="showGrade()">Calculate Grade</button>
+    <p id="result"></p>
+
+    <script src="discount.js"></script>
+    <script src="even.js"></script>
+    <script src="multi.js"></script>
+    <script src="grade.js"></script>
+  </body>
+</html>
